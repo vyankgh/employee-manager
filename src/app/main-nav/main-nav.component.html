@@ -19,11 +19,10 @@
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="(isHandset | async)!.matches">
+        (click)="drawer.toggle()">
         <mat-icon svgIcon="menu"></mat-icon>
       </button>
-      <span>Employee Manager</span>
+      <span>&nbsp;&nbsp;Employee Manager</span>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
