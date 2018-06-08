@@ -40,5 +40,14 @@ export class AppModule {
     iconRegistry.addSvgIcon(
       'menu',
       sanitizer.bypassSecurityTrustResourceUrl('assets/img/menu-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'list',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/view_list-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'edit',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/create-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'info',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/info-24px.svg'));
   }
 }

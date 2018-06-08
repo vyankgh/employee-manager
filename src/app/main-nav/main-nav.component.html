@@ -8,9 +8,9 @@
     [opened]="!(isHandset | async)!.matches">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#"><mat-icon svgIcon="list"></mat-icon>&nbsp;&nbsp;View Employees</a>
+      <a mat-list-item href="#"><mat-icon svgIcon="edit"></mat-icon>&nbsp;&nbsp;Manage Employee</a>
+      <a mat-list-item href="#"><mat-icon svgIcon="info"></mat-icon>&nbsp;&nbsp;About</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
