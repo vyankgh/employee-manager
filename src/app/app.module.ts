@@ -15,11 +15,13 @@ import {
   MatListModule,
   MatIconRegistry
 } from '@angular/material';
+import { EmployeesComponent } from './employees/employees.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavComponent
+    MainNavComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
