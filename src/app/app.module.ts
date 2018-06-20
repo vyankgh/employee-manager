@@ -13,15 +13,19 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatIconRegistry
+  MatIconRegistry,
+  MatInputModule,
+  MatCardModule
 } from '@angular/material';
 import { EmployeesComponent } from './employees/employees.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { EmployeesComponent } from './employees/employees.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

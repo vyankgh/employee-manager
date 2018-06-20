@@ -1,1 +1,16 @@
-{{employee}}
+<mat-card class="card">
+  <mat-card-title>Add employee</mat-card-title>
+  <mat-divider></mat-divider>
+  <form class="employee-form">
+    <mat-form-field class="form-field">
+      <input matInput placeholder="Employee ID" type="number">
+    </mat-form-field>
+    <mat-form-field class="form-field">
+      <input matInput placeholder="Employee Name" type="text">
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit" class="buttons">Save</button>
+    <button mat-raised-button type="reset" class="buttons">Reset</button>
+  </form>
+</mat-card>
+
+
