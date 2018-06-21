@@ -1,4 +1,4 @@
-export class Hero {
+export class Employee {
     employeeId: number;
     firstName: string;
     middleName: string;

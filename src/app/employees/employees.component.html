@@ -1,0 +1,8 @@
+<h2>{{ employee.firstName }}'s Details</h2>
+<div><span>ID: </span>{{employee.employeeId}}</div>
+<div><span>Name: </span>{{employee.firstName}}</div>
+<div>
+  <label>Name:
+    <input [(ngModel)]="employee.firstName" placeholder="name">
+  </label>
+</div>
