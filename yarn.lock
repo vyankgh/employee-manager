@@ -175,6 +175,20 @@
   dependencies:
     tslib "^1.9.0"
 
+"@clr/angular@^0.12.0-rc.2":
+  version "0.12.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@clr/angular/-/angular-0.12.0-rc.2.tgz#b8eda3cd3d7d252ea841d3ddf9aaee65564b5656"
+  dependencies:
+    tslib "^1.9.0"
+
+"@clr/icons@^0.12.0-rc.2":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@clr/icons/-/icons-0.12.0.tgz#6b6042c0ebb7c535ae31c333509b3d7056a271d6"
+
+"@clr/ui@^0.12.0-rc.2":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@clr/ui/-/ui-0.12.0.tgz#f14d67be6dcf3f08b0c2d46a70c948452d26af49"
+
 "@ngtools/webpack@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-6.0.8.tgz#a05bce526aee9da62bb230a95fba83fee99d0bca"
@@ -343,6 +357,10 @@
     "@webassemblyjs/ast" "1.4.3"
     "@webassemblyjs/wast-parser" "1.4.3"
     long "^3.2.0"
+
+"@webcomponents/custom-elements@^1.0.0":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@webcomponents/custom-elements/-/custom-elements-1.1.2.tgz#041e4c20df35245f4d160b50d044b8cff192962c"
 
 abbrev@1:
   version "1.1.1"
