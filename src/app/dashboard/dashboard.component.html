@@ -1,0 +1,12 @@
+<h3>Top Employees</h3>
+<div class="clr-row clr-align-items-start">
+    <a *ngFor="let employee of employees">
+        <div class="clr-col">
+            <span>
+            <div class="card">
+                <div class="card-header">{{employee.firstName}} {{employee.lastName}}</div>
+            </div>
+          </span>
+        </div>
+    </a>
+</div>

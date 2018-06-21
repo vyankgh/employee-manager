@@ -6,17 +6,23 @@ import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EmployeesComponent } from './employees/employees.component';
 import { FormsModule } from '@angular/forms';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    EmployeeDetailComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     ClarityModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

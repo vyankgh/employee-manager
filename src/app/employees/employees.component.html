@@ -1,8 +1,15 @@
-<h2>{{ employee.firstName }}'s Details</h2>
-<div><span>ID: </span>{{employee.employeeId}}</div>
-<div><span>Name: </span>{{employee.firstName}}</div>
-<div>
-  <label>Name:
-    <input [(ngModel)]="employee.firstName" placeholder="name">
-  </label>
+<div class="row">
+  <div class="card">
+    <div class="card-header">
+      Employees
+    </div>
+    <div class="card-text">
+      <ul class="list-group list-group-flush" style="list-style-type: none">
+        <li *ngFor='let employee of employees' (click)="onSelect(employee)">
+          <span><span class="badge">{{employee.employeeId}}</span> {{employee.firstName}} {{employee.lastName}}</span>
+        </li>
+      </ul>
+      <app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
+    </div>
+  </div>
 </div>

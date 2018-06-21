@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-employees',
@@ -8,24 +9,22 @@ import { Employee } from '../employee';
 })
 export class EmployeesComponent implements OnInit {
 
-  employee: Employee = {
-    employeeId: 1,
-    firstName: 'Sanket',
-    middleName: 'Sunil',
-    lastName: 'Kudalkar',
-    gender: 'M',
-    phoneNumber: 9403405750,
-    eMail: 'sanket.4857@gmail.com',
-    birthDate: new Date('1994-01-10'),
-    joiningDate: new Date('2017-01-02'),
-    designation: 'Software Engineer',
-    bloodGroup: 'O+',
-    address: 'Meera Palace'
-  };
+  employees: Employee[];
 
-  constructor() { }
+  selectedEmployee: Employee;
+
+  constructor(private employeeService: EmployeeService) { }
 
   ngOnInit() {
+    this.getEmployees();
+  }
+
+  onSelect(employee: Employee):void {
+    this.selectedEmployee = employee;
+  }
+
+  getEmployees(): void {
+    this.employeeService.getEmployees().subscribe(employees => this.employees = employees);
   }
 
 }
