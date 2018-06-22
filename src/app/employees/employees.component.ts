@@ -29,7 +29,7 @@ export class EmployeesComponent implements OnInit {
   }
 
   getEmployees(): void {
-    this.employeeService.getEmployees().subscribe(employees => this.employees = employees);
+    this.employeeService.getEmployees().subscribe((employees: Array<Employee>) => this.employees = employees);
   }
 
 }

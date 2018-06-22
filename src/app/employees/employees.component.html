@@ -7,7 +7,7 @@
           <label for="isEmployeeOpen">All Employees</label>
           <ul class="nav-list">
             <li *ngFor='let employee of employees' (click)="onSelect(employee)">
-              <a class="nav-link" [class.active]="employee === selectedEmployee">
+              <a class="nav-link" [class.active]="employee === selectedEmployee" routerLink="/employees/{{employee.employeeId}}">
                 <span class="badge">{{employee.employeeId}}</span> {{employee.firstName}} {{employee.lastName}}</a>
             </li>
           </ul>
