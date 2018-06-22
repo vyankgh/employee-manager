@@ -13,4 +13,8 @@ export class EmployeeService {
   getEmployees(): Observable<Employee[]> {
     return of(EMPLOYEES);
   }
+
+  getEmployee(id: number): Observable<Employee> {
+    return of(EMPLOYEES.find(employee => employee.employeeId === id));
+  }
 }

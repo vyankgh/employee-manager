@@ -1,8 +1,5 @@
 <div class="main-container">
   <div class="content-container">
-    <div class="content-area">
-      <app-employee-detail *ngIf="selectedEmployee" [employee]="selectedEmployee"></app-employee-detail>
-    </div>
     <nav class="sidenav">
       <section class="sidenav-content">
         <section class="nav-group collapsible">
@@ -17,5 +14,8 @@
         </section>
       </section>
     </nav>
+    <div class="content-area">
+      <app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
+    </div>
   </div>
 </div>
