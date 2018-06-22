@@ -9,13 +9,15 @@ import { FormsModule } from '@angular/forms';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ViewEmployeeComponent } from './employee-detail/view-employee/view-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
     EmployeeDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
