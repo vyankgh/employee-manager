@@ -1,12 +1,8 @@
 <h3>Top Employees</h3>
-<div class="clr-row clr-align-items-start">
-    <a *ngFor="let employee of employees">
-        <div class="clr-col">
-            <span>
-            <div class="card">
-                <div class="card-header">{{employee.firstName}} {{employee.lastName}}</div>
-            </div>
-          </span>
-        </div>
-    </a>
+<div class="grid grid-pad">
+  <a *ngFor="let employee of employees" class="col-1-4" routerLink="/employees/{{employee.employeeId}}">
+    <div class="module employee">
+      <h4>{{employee.firstName}} {{employee.lastName}}</h4>
+    </div>
+  </a>
 </div>

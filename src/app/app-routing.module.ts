@@ -6,8 +6,10 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'employees', component: EmployeesComponent },
-  { path: '', component: DashboardComponent }
+  { path: 'employees/:id', component: EmployeeDetailComponent }
 ];
 
 @NgModule({

@@ -1,15 +1,21 @@
-<div class="row">
-  <div class="card">
-    <div class="card-header">
-      Employees
+<div class="main-container">
+  <div class="content-container">
+    <div class="content-area">
+      <app-employee-detail *ngIf="selectedEmployee" [employee]="selectedEmployee"></app-employee-detail>
     </div>
-    <div class="card-text">
-      <ul class="list-group list-group-flush" style="list-style-type: none">
-        <li *ngFor='let employee of employees' (click)="onSelect(employee)">
-          <span><span class="badge">{{employee.employeeId}}</span> {{employee.firstName}} {{employee.lastName}}</span>
-        </li>
-      </ul>
-      <app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
-    </div>
+    <nav class="sidenav">
+      <section class="sidenav-content">
+        <section class="nav-group collapsible">
+          <input id="isEmployeeOpen" type="checkbox">
+          <label for="isEmployeeOpen">All Employees</label>
+          <ul class="nav-list">
+            <li *ngFor='let employee of employees' (click)="onSelect(employee)">
+              <a class="nav-link" [class.active]="employee === selectedEmployee">
+                <span class="badge">{{employee.employeeId}}</span> {{employee.firstName}} {{employee.lastName}}</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </nav>
   </div>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
+import { Observable, of } from 'rxjs';
 
 @Component({
   selector: 'app-employees',
@@ -21,6 +22,10 @@ export class EmployeesComponent implements OnInit {
 
   onSelect(employee: Employee):void {
     this.selectedEmployee = employee;
+  }
+
+  getEmployee(id: number): Observable<Employee> {
+    return of(this.employees.find(employee => employee.employeeId === id));
   }
 
   getEmployees(): void {
