@@ -7,15 +7,15 @@
   <div class="clr-col-8">
     <span>{{employee.firstName}} {{employee.middleName}} {{employee.lastName}}</span>
   </div>
-  <div class="clr-col-4">
+  <div class="clr-col-4 genderpadding">
     Gender
   </div>
   <div class="clr-col-8">
-    <div class="radio-inline">
+    <div class="radio-inline radiomargin">
       <input type="radio" name="genderRadio" id="genderRadioM" [checked]="employee.gender === 'M'">
       <label for="genderRadioM">Male</label>
     </div>
-    <div class="radio-inline">
+    <div class="radio-inline radiomargin">
       <input type="radio" name="genderRadio" id="genderRadioF" [checked]="employee.gender === 'F'">
       <label for="genderRadioF">Female</label>
     </div>
