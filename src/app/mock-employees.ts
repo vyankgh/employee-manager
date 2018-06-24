@@ -57,4 +57,18 @@ export const EMPLOYEES: Employee[] = [
         bloodGroup: 'O+',
         address: 'Phondaghat'
     }
+	{
+        employeeId: 5,
+        firstName: 'vyankatesh',
+        middleName: 'sadashive',
+        lastName: 'kudtarkar',
+        gender: 'F',
+        phoneNumber: 9403405753,
+        eMail: 'vyankateshkd@gmail.com',
+        birthDate: new Date('1994-08-08'),
+        joiningDate: new Date('2017-01-02'),
+        designation: 'Software Engineer',
+        bloodGroup: 'O+',
+        address: 'Phondaghat'
+    }
 ];
