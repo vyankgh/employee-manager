@@ -56,7 +56,7 @@ export const EMPLOYEES: Employee[] = [
         designation: 'Software Engineer',
         bloodGroup: 'O+',
         address: 'Phondaghat'
-    }
+    },
 	{
         employeeId: 5,
         firstName: 'vyankatesh',
